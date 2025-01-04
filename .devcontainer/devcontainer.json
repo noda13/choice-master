@@ -1,0 +1,15 @@
+{
+  "name": "Flutter DevContainer",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "flutter",
+  "extensions": [
+    "dart-code.flutter",
+    "dart-code.dart-code",
+    "github.copilot",
+    "eamodio.gitlens",
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint"
+  ],
+  "workspaceFolder": "/workspace",
+  "postCreateCommand": "flutter doctor"
+}

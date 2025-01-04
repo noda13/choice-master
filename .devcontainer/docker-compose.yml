@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  flutter:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: flutter_dev
+    volumes:
+      - .:/workspace
+    working_dir: /workspace
+    command: sleep infinity
+    networks:
+      - flutter_net
+
+networks:
+  flutter_net:
+    driver: bridge
